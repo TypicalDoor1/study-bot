@@ -1,1 +1,2 @@
-# study-bot
+**StudyBot**
+The key to your studies
