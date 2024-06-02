@@ -1,5 +1,5 @@
 const { Client, Events, GatewayIntentBits } = require('discord.js');
-const env = require('./env');
+const env = require('.env');
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 
