@@ -12,7 +12,5 @@ client.once(Events.ClientReady, readyClient => {
     console.log(`Ready! Logged in as ${readyClient.user.tag}`);
 });
 
-client.commands = new Collection();
-
 
 client.login(process.env.DISCORD_TOKEN);
