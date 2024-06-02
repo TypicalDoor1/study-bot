@@ -5,8 +5,7 @@ dotenv.config();
 
 const client = new Client({
   intents: [
-    Intents.FLAGS.GUILDS,
-    Intents.FLAGS.GUILD_MESSAGES
+
   ]
 });
 
@@ -22,4 +21,5 @@ client.on("messageCreate", function(message){
             message.channel.send({ embeds: [helpEmbed] });
         }
     }
+    message.channel.send("hi")
 });
