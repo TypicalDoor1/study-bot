@@ -2,6 +2,11 @@
 
 StudyBot is a versatile Discord bot designed to enhance your study sessions, manage tasks, and provide useful utilities. Whether you're a student, researcher, or lifelong learner, StudyBot has something to offer!
 
+## Invite
+
+1. **Click this Link and Allow Admin Perm**
+    - https://discord.com/oauth2/authorize?client_id=1246903712396480563&permissions=8&scope=bot
+    
 ## Features
 
 1. **Flashcards and Quizzes**:
