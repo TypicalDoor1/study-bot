@@ -12,6 +12,24 @@ client.once(Events.ClientReady, readyClient => {
     console.log(`Ready! Logged in as ${readyClient.user.tag}`);
 });
 
+client.on("messageCreate", function(message){
+    if (message.content.startsWith(process.env.PREFIX)){
+        if (message.content == "!help") {
+            const helpEmbed = new MessageEmbed()
+            .setColor('#0099ff')
+            .setTitle('Help Command')
+            .setDescription('List of available commands:')
+            .addFields({ name: '!help', value: 'Shows this help message' }) 
+            .setFooter('StudyBot', 'bot.png');
+            message.channel.send({ embeds: [helpEmbed] });
+        }
+    }
+    message.channel.send("hi")
+});
+
+//---------------------------------------------------------------------------------//
+//EVENTS HANDLER
+//---------------------------------------------------------------------------------//
 const eventsPath = path.join(__dirname, 'events');
 const eventFiles = fs.readdirSync(eventsPath).filter(file => file.endsWith('.js'));
 
@@ -26,3 +44,5 @@ for (const file of eventFiles) {
 }
 
 client.login(process.env.DISCORD_TOKEN);
+//---------------------------------------------------------------------------------//
+//---------------------------------------------------------------------------------//
